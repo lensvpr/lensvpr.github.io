@@ -181,65 +181,6 @@
   </div>
 </section>
 
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -248,9 +189,14 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-           Autonomous robots face the challenge of needing to know where they are and to understand their environment when 
-          deployed in real-world scenarios. To address this, visual place recognition has become an essential component of 
-            robotic navigation by providing the necessary spatial awareness to accurately map and localize their position within a given area.
+            Autonomous robots need effective localization and environmental understanding for real-world deployment. 
+            Visual place recognition is crucial for mapping and localizing positions but typically requires computationally 
+            demanding models. We present a compact, efficient solution using neuromorphic computing inspired by the brain, 
+            combining spiking neural networks, dynamic vision sensors, and a neuromorphic processor on a single SPECK™ chip.
+            Our Locational Encoding with Neuromorphic Systems (LENS) can learn and recognize places with models over 99% smaller 
+            than traditional systems, using less than 1% of the energy. Deployed on a Hexapod robot, LENS demonstrates real-time, 
+            energy-efficient place recognition in varied environments, using fewer than 35k parameters to learn over 700 places. 
+            This is one of the first fully neuromorphic systems for real-time large-scale localization on robotic platforms.
           </p>
           <p>
 
