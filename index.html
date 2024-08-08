@@ -277,20 +277,23 @@
 
         <div class="content has-text-justified">
           <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
+            This work was developed as an extension to a variety of excellent work in robotic localization.
           </p>
           <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9925670">Sparse event VPR</a> develops the concept of using small number of event pixels to perform accurate localization.
           </p>
           <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
+            <a href="https://arxiv.org/abs/2311.13186">VPRSNN</a> introduced one of the first spiking neural networks for visual place recognition, 
+            which inspired previous work for an efficiently trained and inferenced network <a href="https://arxiv.org/abs/2309.10225">VPRTempo</a>,
+            which was adapted for this work.
           </p>
           <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
+            In addition to this, a lot of great work has been done in the localization and navigation field using neuromorphic hardware.
           </p>
           <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+            <a href="https://www.science.org/doi/full/10.1126/scirobotics.abm6996">Fangwen Yu's work</a> developed an impressive multi-modal neural network for accurate place recognition.
+            <a href="https://www.science.org/doi/10.1126/scirobotics.adg3679">Le Zhu</a> pioneered sequence learning using event cameras through vegetative environments.
+            <a href="https://www.science.org/doi/10.1126/scirobotics.adk0310">Tom van Dijk</a> deployed an impressively compact neuromorphic system on a tiny autonomous drone for visual route following.
           </p>
         </div>
       </div>
@@ -304,7 +307,7 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{park2021nerfies,
+    <pre><code>@misc{Hines2024LENS,
   author    = {Adam D Hines and Michael Milford and Tobias Fischer},
   title     = {A compact neuromorphic system for energy-efficient, on-device robot localization},
   journal   = {arXiv},
