@@ -74,14 +74,15 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">A compact neuromorphic system for energy-efficient, on-device robot localization</h1>
+          <img src="./static/images/logoblack.png" alt="LENS Logo"
+            style=" max-width: 80%; margin: auto;">
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Adam D Hines</a>,</span>
+              <a href="adamdhines.github.io">Adam D Hines</a>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Michael Milford</a>,</span>
+              <a href="https://michaelmilford.com/">Michael Milford</a>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Tobias Fischer</a>,
+              <a href="https://www.tobiasfischer.info/">Tobias Fischer</a>,
             </span>
            
           </div>
@@ -92,9 +93,9 @@
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
+              <!-- arXiv Link. -->
               <span class="link-block">
-                <a href="https://google.com"
+                <a href="https://arxiv.org/abs/2408.16754"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -102,14 +103,14 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
+              <!-- Paper Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/"
+                <a href="https://doi.org/10.1234/your_paper" 
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fab fa-youtube"></i>
+                    <i class="fas fa-file-alt"></i>   <!-- or fa-solid fa-file-lines for FA6 -->
                   </span>
-                  <span>Video</span>
+                  <span>Paper</span>
                 </a>
               </span>
               <!-- Code Link. -->
@@ -132,28 +133,30 @@
   </div>
 </section>
 
-<section class="lens vid">
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser1" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/lensvid.mp4" type="video/mp4">
-      </video>
-        <h2 class="subtitle has-text-centered">
-        Real-time, event driven localization
-      </h2>
-    </div>
-  </div>
-</section>
-  
-<section class="robot vid">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser2" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/0808.mp4" type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Multi-terrain, multi-envrionment deployment on a Hexapod robotic platform
-      </h2>
+    <div class="columns is-vcentered is-multiline">
+
+      <!-- First video column -->
+      <div class="column is-half has-text-centered">
+        <h2 class="title is-5 mb-3">Real-time, event-driven localization</h2>
+        <video autoplay muted loop playsinline style="width: 100%; border-radius: 6px;">
+          <source src="./static/videos/lensvid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Second video column -->
+      <div class="column is-half has-text-centered">
+        <h2 class="title is-5 mb-3">
+          Multi-environment on-robot deployment
+        </h2>
+        <video autoplay muted loop playsinline style="width: 100%; border-radius: 6px;">
+          <source src="./static/videos/0808.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
     </div>
   </div>
 </section>
@@ -163,28 +166,27 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-2 has-text-weight-bold mb-4">
+          <span class="has-text-primary">LENS</span>
+          <span class="is-block has-text-grey-dark" style="font-weight: normal; font-size: 1.3rem;">
+            <span class="has-text-primary">L</span>ocational 
+            <span class="has-text-primary">E</span>ncoding 
+            with 
+            <span class="has-text-primary">N</span>euromorphic 
+            <span class="has-text-primary">S</span>ystems
+          </span>
+        </h2>
         <div class="content has-text-justified">
           <p>
-            Autonomous robots need effective localization and environmental understanding for real-world deployment. 
-            Visual place recognition is crucial for mapping and localizing positions but typically requires computationally 
-            demanding models. We present a compact, efficient solution using neuromorphic computing inspired by the brain, 
-            combining spiking neural networks, dynamic vision sensors, and a neuromorphic processor on a single SPECK™ chip.
-            Our Locational Encoding with Neuromorphic Systems (LENS) can learn and recognize places with models over 99% smaller 
-            than traditional systems, using less than 1% of the energy. Deployed on a Hexapod robot, LENS demonstrates real-time, 
-            energy-efficient place recognition in varied environments, using fewer than 35k parameters to learn over 700 places. 
-            This is one of the first fully neuromorphic systems for real-time large-scale localization on robotic platforms.
-          </p>
-          <p>
-
-          </p>
-          <p>
-
+            LENS is a compact, brain-inspired localization system for autonomous robots.
+            Using spiking neural networks, dynamic vision sensors, and a neuromorphic processor on a single SPECK™ chip, 
+            LENS performs real-time, event-driven place recognition with models 99% smaller and over 100× more energy-efficient than traditional systems. 
+            Deployed on a Hexapod robot, it can learn and recognize over 700 places using fewer than 44k parameters—demonstrating the first large-scale, 
+            fully event-driven localization on a mobile platform.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
 
 
 <section class="section">
@@ -198,7 +200,7 @@
           <h2 class="title is-3">SynSense SPECK™</h2>
           <p>
             Our system is a fully neuromorphic localization ecosystem
-            on the SynSense SPECK™, a single chip event camera and SoC
+            developed for the SynSense SPECK™, combining an event camera and System-on-Chip
             neuromorphic processor.
           </p>
           <img id="speck" src="./static/images/IMG_3593.jpg" alt="SynSense SPECK in a 3D printed housing" height="100%">
@@ -209,11 +211,11 @@
 
       <!-- Matting. -->
       <div class="column">
-        <h2 class="title is-3">Hexapod</h2>
+        <h2 class="title is-3">Robotic Deployment</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              We take our LENS system and deploy it on a Hexapod robotic platform
+              LENS is a fully capable system for deployment on resource constrained robotic platforms
               for multi-terrain, multi-environment mapping and localization.
             </p>
             <img id="speck" src="./static/images/IMG_3558.jpg" alt="Hexapod robot" height="100%">
@@ -233,9 +235,8 @@
         <h3 class="title is-4">Energy efficiency</h3>
         <div class="content has-text-justified">
           <p>
-            A key benefit of our system is the energy effeciency afforded
-            by using neuromorphic hardware and sensors. LENS needs <1% the power
-            required by conventional von Neumann CPUs and Jetson platforms.
+            When deployed on neuromorphic hardware, LENS uses <1% the power
+            required by conventional compute platforms.
           </p>
           <img id="energy" src="./static/images/power.png" alt="Energy effeciency metrics" height="100%">
         </div>
@@ -243,20 +244,19 @@
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
-        <h3 class="title is-4">Localization in small and large scale environments</h3>
+        <h3 class="title is-4">Localization performance</h3>
         <div class="content has-text-justified">
           <p>
-            LENS shows impressive localization in both small and large scale environments.
-            With model sizes smaller than 150 KB with just 35k parameters, the scalability
-            of our system allows for place recognition for traversals up to 8km.
+            LENS shows impressive localization accuracy, outcompeting state-of-the-art VPR methods.
+            With model sizes smaller than 180 KB with just 44k parameters able to map up to 8km.
           </p>
         </div>
         <div class="content has-text-centered">
-          <img id="localization" src="./static/images/indooroutdoor.png" alt="Localization performance" height="100%">
+          <img id="localization" src="./static/images/brisevent.png" alt="Localization performance" height="100%">
         </div>
         <!--/ Re-rendering. -->
 
-        <h3 class="title is-4">Mixed methodology for optimal training and inferencing</h3>
+        <h3 class="title is-3">Unique training</h3>
         <div class="content has-text-justified">
           <p>
             LENS trains on static DVS frames of events collected over a user-specified 
@@ -317,14 +317,15 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{hines2024compactneuromorphicultraenergyefficient,
+    <pre><code>@article{hines2025lens,
       title={A compact neuromorphic system for ultra energy-efficient, on-device robot localization}, 
       author={Adam D. Hines and Michael Milford and Tobias Fischer},
-      year={2024},
-      eprint={2408.16754},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2408.16754}, 
+      journal={},
+      year={2025},
+      volume={},
+      number={},
+      doi={},
+      url={}
 }</code></pre>
   </div>
 </section>
