@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lensvpr.github.io/sitemap.xml
